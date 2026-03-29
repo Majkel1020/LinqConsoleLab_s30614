@@ -103,6 +103,8 @@ public sealed class ZadaniaLinq
     /// </summary>
     public IEnumerable<string> Zadanie05_CzyIstniejeNieaktywneZapisanie()
     {
+
+        var zap = DaneUczelni.Zapisy.Any(z => z.CzyAktywny = false);
         
         
         throw Niezaimplementowano(nameof(Zadanie05_CzyIstniejeNieaktywneZapisanie));
@@ -110,7 +112,7 @@ public sealed class ZadaniaLinq
 
     /// <summary>
     /// Zadanie:
-    /// Sprawdź, czy każdy prowadzący ma uzupełnioną nazwę katedry.
+    /// Sprawdź, czy każdy prowadzący ma uzupełnioną nazwę katedry.S
     /// Warto użyć metody, która weryfikuje warunek dla całej kolekcji.
     ///
     /// SQL:
