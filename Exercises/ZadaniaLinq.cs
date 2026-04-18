@@ -422,7 +422,6 @@ public sealed class ZadaniaLinq
             group z by s.Miasto into g
             orderby g.Count() descending
             select $"{g.Key}: {g.Count()} aktywnych zapisów";
-        
         throw Niezaimplementowano(nameof(Wyzwanie04_MiastaILiczbaAktywnychZapisow));
     }
 
